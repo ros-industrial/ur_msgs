@@ -2,8 +2,8 @@
 Changelog for package ur_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.3.0 (2020-06-22)
+------------------
 * First release of this package from its new repository.
 * Contributors: gavanderhoorn
 
