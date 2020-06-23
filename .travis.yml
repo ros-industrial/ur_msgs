@@ -12,6 +12,7 @@ git:
 env:
   global:
     - VERBOSE_OUTPUT=true
+    - BUILDER=catkin_make
     - CCACHE_DIR=$HOME/.ccache
   matrix:
     - ROS_DISTRO="melodic" ROS_REPO=main
