@@ -15,6 +15,7 @@ env:
   matrix:
     - ROS_DISTRO="melodic" ROS_REPO=main
     - ROS_DISTRO="melodic" ROS_REPO=testing
+    - ROS_DISTRO="noetic" ROS_REPO=main
 
 install:
   - git clone --quiet --depth=1 -b master https://github.com/ros-industrial/industrial_ci.git .industrial_ci
