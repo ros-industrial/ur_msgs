@@ -11,6 +11,7 @@ git:
 
 env:
   global:
+    - VERBOSE_OUTPUT=true
     - CCACHE_DIR=$HOME/.ccache
   matrix:
     - ROS_DISTRO="melodic" ROS_REPO=main
