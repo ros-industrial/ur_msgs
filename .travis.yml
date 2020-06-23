@@ -12,12 +12,10 @@ git:
 env:
   global:
     - VERBOSE_OUTPUT=true
-    - BUILDER=catkin_make
-    - CCACHE_DIR=$HOME/.ccache
   matrix:
     - ROS_DISTRO="kinetic" ROS_REPO=main
     - ROS_DISTRO="melodic" ROS_REPO=main
-    - ROS_DISTRO="melodic" ROS_REPO=main
+    - ROS_DISTRO="melodic" ROS_REPO=testing
 
 install:
   - git clone --quiet --depth=1 -b master https://github.com/ros-industrial/industrial_ci.git .industrial_ci
