@@ -4,7 +4,7 @@ project(ur_msgs)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS message_generation std_msgs)
+find_package(catkin REQUIRED COMPONENTS geometry_msgs message_generation std_msgs)
 
 
 ## Generate messages in the 'msg' folder
@@ -31,6 +31,7 @@ add_service_files(
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
    DEPENDENCIES
+   geometry_msgs
    std_msgs
 )
 
@@ -40,7 +41,7 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES ur_msgs
-   CATKIN_DEPENDS message_runtime std_msgs
+   CATKIN_DEPENDS geometry_msgs message_runtime std_msgs
 #  DEPENDS system_lib
 )
 
