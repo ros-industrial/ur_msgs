@@ -2,8 +2,8 @@
 Changelog for package ur_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.3.1 (2020-06-24)
+------------------
 * Change ``payload`` field name to ``mass`` (`#5 <https://github.com/ros-industrial/ur_msgs/issues/5>`_)
 * Added ``center_of_gravity`` field to ``SetPayload`` service (`#2 <https://github.com/ros-industrial/ur_msgs/issues/2>`_)
 * Mark package as architecture independent (`#1 <https://github.com/ros-industrial/ur_msgs/issues/1>`_)
