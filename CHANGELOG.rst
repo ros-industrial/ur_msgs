@@ -2,6 +2,11 @@
 Changelog for package ur_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.3.2 (2020-10-12)
+------------------
+* Fix domain constants in ``Analog.msg`` (`#8 <https://github.com/ros-industrial/ur_msgs/issues/8>`_)
+* Contributors: Gaël Écorchard
+
 1.3.1 (2020-06-24)
 ------------------
 * Change ``payload`` field name to ``mass`` (`#5 <https://github.com/ros-industrial/ur_msgs/issues/5>`_)
