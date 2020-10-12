@@ -2,8 +2,8 @@
 Changelog for package ur_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.3.2 (2020-10-12)
+------------------
 * Fix domain constants in ``Analog.msg`` (`#8 <https://github.com/ros-industrial/ur_msgs/issues/8>`_)
 * Contributors: Gaël Écorchard
 
