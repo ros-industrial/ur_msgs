@@ -2,8 +2,8 @@
 Changelog for package ur_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.3.4 (2021-05-25)
+------------------
 * Bump CMake version to ignore warning
 * Contributors: gavanderhoorn
 
