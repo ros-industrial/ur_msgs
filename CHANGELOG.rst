@@ -2,8 +2,8 @@
 Changelog for package ur_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.3.3 (2021-05-25)
+------------------
 * Migrate to Github Actions
 * Fix SetPayload srv separater invalid (`#10 <https://github.com/ros-industrial/ur_msgs/issues/10>`_)
 * Contributors: Chen Bainian, gavanderhoorn
