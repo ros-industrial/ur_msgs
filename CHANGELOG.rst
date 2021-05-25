@@ -2,6 +2,11 @@
 Changelog for package ur_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.3.4 (2021-05-25)
+------------------
+* Bump CMake version to ignore warning
+* Contributors: gavanderhoorn
+
 1.3.3 (2021-05-25)
 ------------------
 * Migrate to Github Actions
