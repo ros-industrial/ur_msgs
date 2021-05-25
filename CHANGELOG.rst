@@ -2,6 +2,12 @@
 Changelog for package ur_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.3.3 (2021-05-25)
+------------------
+* Migrate to Github Actions
+* Fix SetPayload srv separater invalid (`#10 <https://github.com/ros-industrial/ur_msgs/issues/10>`_)
+* Contributors: Chen Bainian, gavanderhoorn
+
 1.3.2 (2020-10-12)
 ------------------
 * Fix domain constants in ``Analog.msg`` (`#8 <https://github.com/ros-industrial/ur_msgs/issues/8>`_)
