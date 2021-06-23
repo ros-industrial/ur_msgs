@@ -7,6 +7,9 @@
 #
 #  fun    The function to perform
 #  pin    Numeric ID of the pin to set
+#         Use pin 0-7 for digital / analog outputs
+#         Use pin 8-15 for configurable outputs
+#         Use pin 16, 17 for digital tool output
 #  state  Desired pin state (signal level for analog or STATE_(ON|OFF) for DIO and flags)
 #
 # When configuring tool voltage:
