@@ -6,10 +6,7 @@
 # When setting DIO or AIO pins to new values:
 #
 #  fun    The function to perform
-#  pin    Numeric ID of the pin to set
-#         Use pin 0-7 for digital / analog outputs
-#         Use pin 8-15 for configurable outputs
-#         Use pin 16, 17 for digital tool output
+#  pin    Numeric ID of the pin to set, see constants definition below
 #  state  Desired pin state (signal level for analog or STATE_(ON|OFF) for DIO and flags)
 #
 # When configuring tool voltage:
@@ -19,6 +16,27 @@
 #  state  Desired tool voltage (use STATE_TOOL_VOLTAGE constants)
 
 # constants
+# pin mapping
+int8 DOUT0 = 0
+int8 DOUT1 = 1
+int8 DOUT2 = 2
+int8 DOUT3 = 3
+int8 DOUT4 = 4
+int8 DOUT5 = 5
+int8 DOUT6 = 6
+int8 DOUT7 = 7
+int8 COUT0 = 8
+int8 COUT1 = 9
+int8 COUT2 = 10
+int8 COUT3 = 11
+int8 COUT4 = 12
+int8 COUT5 = 13
+int8 COUT6 = 14
+int8 COUT7 = 15
+int8 TOOL_OUT0 = 16
+int8 TOOL_OUT1 = 17
+int8 AOUT0 = 0
+int8 AOUT1 = 1
 
 # valid function values
 #
