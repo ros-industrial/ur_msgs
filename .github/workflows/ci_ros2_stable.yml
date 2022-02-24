@@ -1,4 +1,4 @@
-name: CI - Ubuntu Bionic
+name: CI - ROS2 stable
 
 on:
   # direct pushes to protected branches are not supported
@@ -16,12 +16,11 @@ jobs:
 
     strategy:
       matrix:
-        ros_distro: [ melodic, noetic ]
+        ros_distro: [ foxy, galactic ]
         ros_repo: [ main ]
 
     env:
       CCACHE_DIR: "${{ github.workspace }}/.ccache"
-      CATKIN_LINT: "true"
 
     steps:
       - name: Fetch repository
