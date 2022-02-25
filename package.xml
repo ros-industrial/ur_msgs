@@ -25,6 +25,17 @@
   <member_of_group>rosidl_interface_packages</member_of_group>
 
   <export>
+    <rosindex>
+      <tags>
+        <tag>messages</tag>
+        <tag>ros-industrial</tag>
+        <tag>services</tag>
+        <tag>universal_robot</tag>
+      </tags>
+    </rosindex>
+    <ros_industrial>
+      <support_level value="community" />
+    </ros_industrial>
     <build_type>ament_cmake</build_type>
   </export>
 </package>
