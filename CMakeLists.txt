@@ -1,58 +1,40 @@
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 3.5)
 project(ur_msgs)
 
-## Find catkin macros and libraries
-## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
-## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS geometry_msgs message_generation std_msgs)
+find_package(ament_cmake REQUIRED)
+find_package(builtin_interfaces REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
-
-## Generate messages in the 'msg' folder
-add_message_files(
-   FILES
-   Analog.msg
-   Digital.msg
-   IOStates.msg
-   RobotStateRTMsg.msg
-   MasterboardDataMsg.msg
-   RobotModeDataMsg.msg
-   ToolDataMsg.msg
+set(msg_files
+  msg/Analog.msg
+  msg/Digital.msg
+  msg/IOStates.msg
+  msg/RobotStateRTMsg.msg
+  msg/MasterboardDataMsg.msg
+  msg/RobotModeDataMsg.msg
+  msg/ToolDataMsg.msg
 )
 
-## Generate services in the 'srv' folder
-add_service_files(
-   FILES
-   SetPayload.srv
-   SetSpeedSliderFraction.srv
-   SetIO.srv
+set(srv_files
+  srv/SetPayload.srv
+  srv/SetSpeedSliderFraction.srv
+  srv/SetIO.srv
 )
 
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  ament_lint_auto_find_test_dependencies()
+endif()
 
-## Generate added messages and services with any dependencies listed here
-generate_messages(
-   DEPENDENCIES
-   geometry_msgs
-   std_msgs
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${msg_files}
+  ${srv_files}
+  DEPENDENCIES builtin_interfaces geometry_msgs
+  ADD_LINTER_TESTS
 )
 
-###################################
-## catkin specific configuration ##
-###################################
-catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES ur_msgs
-   CATKIN_DEPENDS geometry_msgs message_runtime std_msgs
-#  DEPENDS system_lib
-)
+ament_export_dependencies(rosidl_default_runtime)
 
-###########
-## Build ##
-###########
+ament_package()
 
-#############
-## Install ##
-#############
-
-#############
-## Testing ##
-#############
