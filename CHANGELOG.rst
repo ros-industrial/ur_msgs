@@ -2,6 +2,12 @@
 Changelog for package ur_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Porting to ros2 (`#12 <https://github.com/destogl/ur_msgs/issues/12>`_)
+* Document pin mapping in SetIO service (`#16 <https://github.com/destogl/ur_msgs/issues/16>`_)
+* Contributors: Denis Štogl, Felix Exner, gavanderhoorn
+
 1.3.4 (2021-05-25)
 ------------------
 * Bump CMake version to ignore warning
