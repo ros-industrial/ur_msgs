@@ -2,8 +2,8 @@
 Changelog for package ur_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.0 (2022-04-12)
+------------------
 * Porting to ros2 (`#12 <https://github.com/destogl/ur_msgs/issues/12>`_)
 * Document pin mapping in SetIO service (`#16 <https://github.com/destogl/ur_msgs/issues/16>`_)
 * Contributors: Denis Štogl, Felix Exner, gavanderhoorn
