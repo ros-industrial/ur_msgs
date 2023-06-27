@@ -1,16 +1,29 @@
-# A 6d pose vector that defines the force frame relative to the base frame
-float64[] task_frame        
+# A 6d pose that defines the force frame. Must be static relative to the robot's base frame.
+geometry_msgs/PoseStamped task_frame
 
-# A 6d vector of 0s and 1s. 1 means that the robot will be compliant in the corresponding axis of the task frame
-float64[] selection_vector  
+# 1 means that the robot will be compliant in the corresponding axis of the task frame
+bool selection_vector_x
+bool selection_vector_y
+bool selection_vector_z
+bool selection_vector_rx
+bool selection_vector_ry
+bool selection_vector_rz
 
-# A 6d vector. The forces/torques the robot will apply to its environment
-float64[] wrench         
+# The forces/torques the robot will apply to its environment. For geometric interpretation, please
+# see parameter `type`
+geometry_msgs/Wrench wrench
 
 # An integer [1;3] specifying how the robot interprets the force frame
-uint8     type    
+# 1: The force frame is transformed in a way such that its y-axis is aligned with a vector pointing
+#    from the robot tcp towards the origin of the force frame.
+# 2: The force frame is not transformed.
+# 3: The force frame is transformed in a way such that its x-axis is the projection of the robot tcp
+#     velocity vector onto the x-y plane of the force frame.
+uint8 type
 
-# 6d vector. For compliant axes, these values are the maximum allowed tcp speed along/about the axis. For non-compliant axes, these values are the maximum allowed deviation along/about an axis between the actual tcp position and the one set by the program
-float32[] limits            
+# For compliant axes, these values are the maximum allowed tcp speed along/about the axis.
+# For non-compliant axes, these values are the maximum allowed deviation along/about an axis
+# between the actual tcp position and the one set by the program.
+float32[6] limits
 ---
 bool success
