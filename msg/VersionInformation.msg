@@ -1,4 +1,0 @@
-uint32 major    # Major version number
-uint32 minor    # Minor version number
-uint32 bugfix   # Bugfix version number
-uint32 build    # Build number
