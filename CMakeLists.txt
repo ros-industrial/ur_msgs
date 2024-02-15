@@ -25,6 +25,7 @@ add_service_files(
    SetPayload.srv
    SetSpeedSliderFraction.srv
    SetIO.srv
+   GetVersion.srv
 )
 
 
