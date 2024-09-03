@@ -2,8 +2,8 @@
 Changelog for package ur_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.3.5 (2024-09-03)
+------------------
 * Added service to get robot software version. (`#24 <https://github.com/ros-industrial/ur_msgs/issues/24>`_)
 * ci: bump checkout and cache (`#22 <https://github.com/ros-industrial/ur_msgs/issues/22>`_)
 * Document pin mapping in SetIO service (`#16 <https://github.com/ros-industrial/ur_msgs/issues/16>`_)
