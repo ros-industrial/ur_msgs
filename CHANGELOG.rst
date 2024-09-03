@@ -2,6 +2,13 @@
 Changelog for package ur_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Added service to get robot software version. (`#24 <https://github.com/ros-industrial/ur_msgs/issues/24>`_)
+* ci: bump checkout and cache (`#22 <https://github.com/ros-industrial/ur_msgs/issues/22>`_)
+* Document pin mapping in SetIO service (`#16 <https://github.com/ros-industrial/ur_msgs/issues/16>`_)
+* Contributors: Felix Exner, G.A. vd. Hoorn, URJala
+
 1.3.4 (2021-05-25)
 ------------------
 * Bump CMake version to ignore warning
