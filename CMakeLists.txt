@@ -17,6 +17,7 @@ set(msg_files
 )
 
 set(srv_files
+  srv/SetAnalogOutput.srv
   srv/SetPayload.srv
   srv/SetSpeedSliderFraction.srv
   srv/SetIO.srv
