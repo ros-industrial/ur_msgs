@@ -1,7 +1,7 @@
 # This data structure contains the MasterboardData structure
 # used by the Universal Robots controller
 #
-# MasterboardData is part of the data structure being send on the 
+# MasterboardData is part of the data structure being send on the
 # secondary client communications interface
 # 
 # This data structure is send at 10 Hz on TCP port 30002
