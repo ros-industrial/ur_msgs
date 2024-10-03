@@ -12,19 +12,19 @@ on:
 jobs:
   industrial_ci:
     name: ROS ${{ matrix.ros_distro }} (${{ matrix.ros_repo }})
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
 
     strategy:
       matrix:
-        ros_distro: [ foxy, galactic ]
-        ros_repo: [ main ]
+        ros_distro: [humble, iron, jazzy, rolling]
+        ros_repo: [main]
 
     env:
       CCACHE_DIR: "${{ github.workspace }}/.ccache"
 
     steps:
       - name: Fetch repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: ccache cache
         uses: actions/cache@v3
