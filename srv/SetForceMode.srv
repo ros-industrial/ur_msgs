@@ -1,0 +1,45 @@
+# A 6d pose that defines the force frame. Must be static relative to the robot's base frame.
+geometry_msgs/PoseStamped task_frame
+
+# 1 means that the robot will be compliant in the corresponding axis of the task frame
+bool selection_vector_x 0 
+bool selection_vector_y 0
+bool selection_vector_z 0
+bool selection_vector_rx 0
+bool selection_vector_ry 0
+bool selection_vector_rz 0
+
+# The forces/torques the robot will apply to its environment. For geometric interpretation, please
+# see parameter `type`
+geometry_msgs/Wrench wrench
+
+# An integer [1;3] specifying how the robot interprets the force frame
+# 1: The force frame is transformed in a way such that its y-axis is aligned with a vector pointing
+#    from the robot tcp towards the origin of the force frame.
+# 2: The force frame is not transformed.
+# 3: The force frame is transformed in a way such that its x-axis is the projection of the robot tcp
+#     velocity vector onto the x-y plane of the force frame.
+uint8 type 2
+# Type constants:
+uint8 TCP_TO_ORIGIN=1
+uint8 NO_TRANSFORM=2
+uint8 TCP_VELOCITY_TO_X_Y=3
+
+# Maximum allowed tcp speed (relative to the task frame).
+# PLEASE NOTE: This is only relevant for axes marked as compliant in the selection_vector
+geometry_msgs/Twist speed_limits
+
+# For non-compliant axes, these values are the maximum allowed deviation along/about an axis
+# between the actual tcp position and the one set by the program.
+float32[6] deviation_limits [0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+
+# Force mode damping factor. Sets the damping parameter in force mode. In range [0;1], default value is 0.025
+# A value of 1 is full damping, so the robot will decelerate quickly if no force is present. A value of 0
+# is no damping, here the robot will maintain the speed.
+float32 damping_factor 0.025
+
+# Force mode gain scaling factor. Scales the gain in force mode. scaling parameter is in range [0;2], default is 0.5. 
+# A value larger than 1 can make force mode unstable, e.g. in case of collisions or pushing against hard surfaces.
+float32 gain_scaling 0.5
+---
+bool success

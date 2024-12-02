@@ -22,6 +22,7 @@ set(srv_files
   srv/SetSpeedSliderFraction.srv
   srv/SetIO.srv
   srv/GetRobotSoftwareVersion.srv
+  srv/SetForceMode.srv
 )
 
 if(BUILD_TESTING)
