@@ -5,6 +5,10 @@ find_package(ament_cmake REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(trajectory_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(control_msgs REQUIRED)
+
 
 set(msg_files
   msg/Analog.msg
@@ -27,6 +31,7 @@ set(srv_files
 
 set(action_files
   action/ToolContact.action
+  action/TrajectoryUntil.action
 )
 
 if(BUILD_TESTING)
@@ -38,7 +43,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
   ${srv_files}
   ${action_files}
-  DEPENDENCIES builtin_interfaces geometry_msgs
+  DEPENDENCIES builtin_interfaces geometry_msgs trajectory_msgs std_msgs control_msgs
   ADD_LINTER_TESTS
 )
 
