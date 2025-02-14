@@ -1,8 +1,7 @@
 
 ---
 int32 SUCCESS=0
-int32 CANCELLED_BY_USER = -1
-int32 ABORTED_BY_HARDWARE = -2
-int32 ABORTED_BY_CONTROLLER = -3
+int32 PREEMPTED = -1
+int32 ABORTED = -2
 int32 result
 ---
