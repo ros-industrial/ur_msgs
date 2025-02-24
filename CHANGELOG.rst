@@ -2,6 +2,11 @@
 Changelog for package ur_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add SetForceMode service (`#27 <https://github.com/ros-industrial/ur_msgs/issues/27>`_)
+* Contributors: URJala
+
 1.4.0 (2024-09-18)
 ------------------
 * Added service to get robot software version. (`#24 <https://github.com/ros-industrial/ur_msgs/issues/24>`_)
