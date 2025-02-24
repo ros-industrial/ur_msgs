@@ -27,6 +27,7 @@ add_service_files(
    SetSpeedSliderFraction.srv
    SetIO.srv
    GetRobotSoftwareVersion.srv
+   SetForceMode.srv
 )
 
 
