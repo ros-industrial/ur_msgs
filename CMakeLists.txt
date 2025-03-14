@@ -25,6 +25,10 @@ set(srv_files
   srv/SetForceMode.srv
 )
 
+set(action_files
+  action/ToolContact.action
+)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   ament_lint_auto_find_test_dependencies()
@@ -33,6 +37,7 @@ endif()
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
   ${srv_files}
+  ${action_files}
   DEPENDENCIES builtin_interfaces geometry_msgs
   ADD_LINTER_TESTS
 )
