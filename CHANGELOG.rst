@@ -2,6 +2,11 @@
 Changelog for package ur_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.2.0 (2025-03-17)
+------------------
+* Tool contact action (`#37 <https://github.com/ros-industrial/ur_msgs/issues/37>`_)
+* Contributors: URJala
+
 2.1.0 (2024-12-02)
 ------------------
 * Added service to set force mode (`#26 <https://github.com/ros-industrial/ur_msgs/issues/26>`_)
