@@ -2,8 +2,8 @@
 Changelog for package ur_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.2.0 (2025-03-17)
+------------------
 * Tool contact action (`#37 <https://github.com/ros-industrial/ur_msgs/issues/37>`_)
 * Contributors: URJala
 
