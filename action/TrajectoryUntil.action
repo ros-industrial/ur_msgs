@@ -43,8 +43,6 @@ int32 GOAL_TOLERANCE_VIOLATED = -5
 int32 until_condition_result
 int32 TRIGGERED = 0
 int32 NOT_TRIGGERED = 1
-int32 PREEMPTED = -1
-int32 ABORTED = -2
 
 # Human readable description of the error code. Contains complementary
 # information that is especially useful when execution fails, for instance:
