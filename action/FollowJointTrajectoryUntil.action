@@ -1,0 +1,38 @@
+# The joint trajectory to follow
+trajectory_msgs/JointTrajectory trajectory
+
+# The tolerances for the trajectory, while it is executing
+control_msgs/JointTolerance[] path_tolerance
+
+# The tolerances for the goal, when the trajectory is finished.
+control_msgs/JointTolerance[] goal_tolerance
+builtin_interfaces/Duration goal_time_tolerance
+
+# The condition until which the trajectory should run.
+uint8 until_type
+uint8 TOOL_CONTACT = 0
+
+---
+# The trajectory will be reported as succesful if either the trajectory finishes, or the until condition is met. 
+# The error codes will be used if the trajectory fails and the until condition is not met.
+int32 error_code
+int32 SUCCESSFUL = 0
+int32 INVALID_GOAL = -1
+int32 INVALID_JOINTS = -2
+int32 OLD_HEADER_TIMESTAMP = -3
+int32 PATH_TOLERANCE_VIOLATED = -4
+int32 GOAL_TOLERANCE_VIOLATED = -5
+
+int32 until_condition_result
+int32 TRIGGERED = 0
+int32 NOT_TRIGGERED = 1
+
+# The error string will contain information about the final state of the trajectory execution.
+string error_string
+
+---
+std_msgs/Header header
+string[] joint_names
+trajectory_msgs/JointTrajectoryPoint desired
+trajectory_msgs/JointTrajectoryPoint actual
+trajectory_msgs/JointTrajectoryPoint error
