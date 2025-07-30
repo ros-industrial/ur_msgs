@@ -7,7 +7,7 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(control_msgs REQUIRED)
 find_package(trajectory_msgs REQUIRED)
-find_package(std_msgs)
+find_package(std_msgs REQUIRED)
 
 set(msg_files
   msg/Analog.msg
@@ -30,7 +30,7 @@ set(srv_files
 
 set(action_files
   action/ToolContact.action
-  action/TrajectoryUntil.action
+  action/FollowJointTrajectoryUntil.action
 )
 
 if(BUILD_TESTING)
