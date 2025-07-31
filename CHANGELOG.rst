@@ -2,8 +2,8 @@
 Changelog for package ur_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.3.0 (2025-07-31)
+------------------
 * Trajectory until action definition (`#38 <https://github.com/ros-industrial/ur_msgs/issues/38>`_)
 * Contributors: URJala
 
