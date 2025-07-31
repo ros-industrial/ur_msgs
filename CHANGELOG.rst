@@ -2,6 +2,11 @@
 Changelog for package ur_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Trajectory until action definition (`#38 <https://github.com/ros-industrial/ur_msgs/issues/38>`_)
+* Contributors: URJala
+
 2.2.0 (2025-03-17)
 ------------------
 * Tool contact action (`#37 <https://github.com/ros-industrial/ur_msgs/issues/37>`_)
