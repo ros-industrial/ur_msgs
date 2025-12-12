@@ -1,0 +1,4 @@
+# This is the gravity vector (down, towards the Earth) represented in the robot's base_link
+geometry_msgs/Vector3 gravity
+---
+bool success
