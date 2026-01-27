@@ -1,9 +1,6 @@
 # This is the gravity vector (down, towards the Earth) represented in the frame_id of the request
 # The UR Robot driver will transform this to the robot frame automatically
 geometry_msgs/Vector3Stamped gravity
-
-# The base link of the robot, usually "base_link" if not tf-prefixed
-string base_frame_name "base_link"
 ---
 bool success
 string status
