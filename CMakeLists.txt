@@ -26,6 +26,7 @@ set(srv_files
   srv/SetIO.srv
   srv/GetRobotSoftwareVersion.srv
   srv/SetForceMode.srv
+  srv/SetFrictionModelParameters.srv
 )
 
 set(action_files
