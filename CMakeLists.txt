@@ -17,6 +17,7 @@ set(msg_files
   msg/MasterboardDataMsg.msg
   msg/RobotModeDataMsg.msg
   msg/ToolDataMsg.msg
+  msg/FrictionModelParameters.msg
 )
 
 set(srv_files
