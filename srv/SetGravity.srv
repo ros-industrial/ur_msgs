@@ -1,4 +1,5 @@
-# This is the gravity vector (down, towards the Earth) represented in the frame_id of the request
+# The direction of the acceleration experienced by the robot.
+# When the robot mounting is fixed, this corresponds to an acceleration of gravity away from the earth’s centre.
 # The UR Robot driver will transform this to the robot frame automatically
 geometry_msgs/Vector3Stamped gravity
 ---
