@@ -2,8 +2,8 @@
 Changelog for package ur_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.4.0 (2026-03-20)
+------------------
 * Add a service to set friction model parameters (`#40 <https://github.com/ros-industrial/ur_msgs/issues/40>`_)
 * Contributors: Rune Søe-Knudsen
 
