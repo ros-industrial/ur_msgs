@@ -1,0 +1,6 @@
+# The direction of the gravity experienced by the robot, pointing towards the earth’s centre.
+# The UR Robot driver will transform this to the robot frame automatically
+geometry_msgs/Vector3Stamped gravity
+---
+bool success
+string status
