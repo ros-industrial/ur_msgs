@@ -2,8 +2,8 @@
 Changelog for package ur_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.5.0 (2026-03-26)
+------------------
 * Add service for setting gravity vector (`#39 <https://github.com/ros-industrial/ur_msgs/issues/39>`_)
 * Contributors: AdamPettinger
 
