@@ -17,15 +17,18 @@ set(msg_files
   msg/MasterboardDataMsg.msg
   msg/RobotModeDataMsg.msg
   msg/ToolDataMsg.msg
+  msg/FrictionModelParameters.msg
 )
 
 set(srv_files
   srv/SetAnalogOutput.srv
+  srv/SetGravity.srv
   srv/SetPayload.srv
   srv/SetSpeedSliderFraction.srv
   srv/SetIO.srv
   srv/GetRobotSoftwareVersion.srv
   srv/SetForceMode.srv
+  srv/SetFrictionModelParameters.srv
 )
 
 set(action_files
