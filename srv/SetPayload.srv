@@ -6,6 +6,6 @@ float64 izz
 float64 ixy  
 float64 ixz  
 float64 iyz  
-float64 transition_time  
+builtin_interfaces/Duration transition_time  
 ---
 bool success
