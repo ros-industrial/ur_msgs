@@ -4,6 +4,7 @@
   <name>ur_msgs</name>
   <version>2.5.0</version>
   <description>Message and service definitions for interacting with Universal Robots robot controllers.</description>
+  <maintainer email="ros@universal-robots.com">Universal Robots A/S</maintainer>
   <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn</maintainer>
   <maintainer email="miguel.prada@tecnalia.com">Miguel Prada Sarasola</maintainer>
   <maintainer email="nhg@ipa.fhg.de">Nadia Hammoudeh Garcia</maintainer>
