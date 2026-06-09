@@ -1,4 +1,4 @@
 geometry_msgs/Inertia payload
-float64 transition_time
+builtin_interfaces/Duration transition_time
 ---
 bool success
