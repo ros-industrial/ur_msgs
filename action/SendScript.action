@@ -1,5 +1,5 @@
 # Valid script code, that should be sent to the robot. This can either be a one-liner, or a longer function definition.
-string script_code
+string program
 
 # Name for the script which will be used in various log messages. This will be ignored, if a name is already defined in the script code itself.
 string script_name ""
