@@ -10,9 +10,6 @@ builtin_interfaces/Duration start_timeout
 # Whether the script execution should report as failed, if the robot generates a warning during execution
 bool fail_on_warnings true
 
-# Whether the underlying interface connection should be restarted, if it is read-only. This will stop and start the primary client connection.
-bool retry_on_readonly_interface true
-
 ---
 # Whether the script was successfully exeuted.
 bool success
