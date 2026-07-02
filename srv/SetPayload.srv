@@ -1,4 +1,4 @@
-float32 mass
-geometry_msgs/Vector3 center_of_gravity
+geometry_msgs/Inertia payload
+builtin_interfaces/Duration transition_time
 ---
 bool success
