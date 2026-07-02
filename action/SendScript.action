@@ -1,0 +1,20 @@
+# Valid script code, that should be sent to the robot. This can either be a one-liner, or a longer function definition.
+string program
+
+# Name for the script which will be used in various log messages. This will be ignored, if a name is already defined in the script code itself.
+string script_name ""
+
+# The maximum amount of time that is allowed to pass, before the script must be confirmed to have started
+builtin_interfaces/Duration start_timeout
+
+# Whether the script execution should report as failed, if the robot generates a warning during execution
+bool fail_on_warnings true
+
+---
+# Whether the script was successfully exeuted.
+bool success
+
+# Message containing the cause of failure, if any.
+string message
+
+---

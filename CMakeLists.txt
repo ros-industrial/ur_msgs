@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.14.4)
 project(ur_msgs)
 
 find_package(ament_cmake REQUIRED)
@@ -34,6 +34,7 @@ set(srv_files
 set(action_files
   action/ToolContact.action
   action/FollowJointTrajectoryUntil.action
+  action/SendScript.action
 )
 
 if(BUILD_TESTING)
