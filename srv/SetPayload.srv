@@ -1,4 +1,11 @@
 float32 mass
 geometry_msgs/Vector3 center_of_gravity
+float64 ixx  
+float64 iyy  
+float64 izz  
+float64 ixy  
+float64 ixz  
+float64 iyz  
+builtin_interfaces/Duration transition_time  
 ---
 bool success
