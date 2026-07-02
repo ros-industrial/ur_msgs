@@ -2,8 +2,8 @@
 Changelog for package ur_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+3.0.0 (2026-07-02)
+------------------
 * [BREAKING[ Add inertia matrix and transition_time support to set_payload service   (`#42 <https://github.com/ros-industrial/ur_msgs/issues/42>`_)
   Replace mass/cog fields with Inertia and add transition_time in SetPayload
 * Action definition for executing scripts via primary client (`#45 <https://github.com/ros-industrial/ur_msgs/issues/45>`_)
