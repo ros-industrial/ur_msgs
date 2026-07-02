@@ -34,6 +34,7 @@ set(srv_files
 set(action_files
   action/ToolContact.action
   action/FollowJointTrajectoryUntil.action
+  action/SendScript.action
 )
 
 if(BUILD_TESTING)
