@@ -8,7 +8,7 @@
 uint8 CONTROL_MODE_POSITION=0
 uint8 CONTROL_MODE_TEACH=1
 uint8 CONTROL_MODE_FORCE=2
-uint8 CONTROL_MODE_UNKNOWN=255
+uint8 CONTROL_MODE_UNKNOWN=255 # Set by the driver when the primary interface has not yet delivered a RobotModeData package.
 
 uint64 timestamp
 bool is_robot_connected
