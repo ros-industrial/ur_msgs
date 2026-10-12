@@ -11,9 +11,11 @@
 #
 # When configuring tool voltage:
 #
-#  fun    Set to FUN_SET_TOOL_VOLTAGE
+#  fun    FUN_SET_TOOL_VOLTAGE for connector T0, or FUN_SET_TOOL_VOLTAGE_T2 for connector T2
 #  pin    Ignored
-#  state  Desired tool voltage (use STATE_TOOL_VOLTAGE constants)
+#  state  Desired tool voltage (use STATE_TOOL_VOLTAGE constants).
+#         Connector T0 accepts 0, 12 and 24. Connector T2 (Tool Flange V2, PolyScope X 10.15
+#         or later) accepts 0, 24 and 48.
 
 # constants
 # pin mapping
@@ -52,15 +54,18 @@ int8 FUN_SET_DIGITAL_OUT = 1
 int8 FUN_SET_FLAG = 2
 int8 FUN_SET_ANALOG_OUT = 3
 int8 FUN_SET_TOOL_VOLTAGE = 4
+int8 FUN_SET_TOOL_VOLTAGE_T2 = 5
 
 # valid values for 'state' when setting digital IO or flags
 int8 STATE_OFF = 0
 int8 STATE_ON = 1
 
 # valid 'state' values when setting tool voltage
+# T0 accepts 0, 12 and 24. T2 accepts 0, 24 and 48.
 int8 STATE_TOOL_VOLTAGE_0V = 0
 int8 STATE_TOOL_VOLTAGE_12V = 12
 int8 STATE_TOOL_VOLTAGE_24V = 24
+int8 STATE_TOOL_VOLTAGE_48V = 48
 
 # request fields
 int8 fun
