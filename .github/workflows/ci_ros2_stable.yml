@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        ros_distro: [humble, iron, jazzy, rolling]
+        ros_distro: [humble, jazzy, kilted, lyrical]
         ros_repo: [main]
 
     env:
