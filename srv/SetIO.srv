@@ -43,9 +43,15 @@ int8 PIN_CONF_OUT5 = 13
 int8 PIN_CONF_OUT6 = 14
 int8 PIN_CONF_OUT7 = 15
 
-# digital tool output
+# digital tool T0 output
 int8 PIN_TOOL_DOUT0 = 16
 int8 PIN_TOOL_DOUT1 = 17
+
+# digital tool T1 output, V2 tool flange only
+int8 PIN_TOOL_T1_DOUT0 = 18
+int8 PIN_TOOL_T1_DOUT1 = 19
+int8 PIN_TOOL_T1_DOUT2 = 20
+int8 PIN_TOOL_T1_DOUT3 = 21
 
 # valid function values
 #
