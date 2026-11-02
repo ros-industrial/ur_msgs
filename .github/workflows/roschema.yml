@@ -1,3 +1,4 @@
+name: Stability check
 on: pull_request
 jobs:
   roschema:
