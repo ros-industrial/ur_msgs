@@ -2,8 +2,8 @@
 Changelog for package ur_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.7.0 (2026-11-03)
+------------------
 * Add message for tool data T1 (`#50 <https://github.com/ros-industrial/ur_msgs/issues/50>`_) (`#56 <https://github.com/ros-industrial/ur_msgs/issues/56>`_)
 * Add connector T2 (48 V) tool voltage to SetIO and ToolDataT2Msg (backport `#49 <https://github.com/ros-industrial/ur_msgs/issues/49>`_) (`#51 <https://github.com/ros-industrial/ur_msgs/issues/51>`_)
 * Update ROS distributions in CI (`#53 <https://github.com/ros-industrial/ur_msgs/issues/53>`_)
