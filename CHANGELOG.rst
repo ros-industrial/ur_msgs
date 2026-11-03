@@ -2,6 +2,17 @@
 Changelog for package ur_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+3.1.0 (2026-11-03)
+------------------
+* Add message for tool data T1 (`#50 <https://github.com/ros-industrial/ur_msgs/issues/50>`_)
+* Update readme w.r.t distros and maintenance (`#52 <https://github.com/ros-industrial/ur_msgs/issues/52>`_)
+  - List all target distributions and their matching dev branches
+  - Fix the index.ros.org url
+  - Update the support level badge, as we are actually maintaining this as a vendor
+  - Add UR as maintainer
+* Add connector T2 (48 V) tool voltage to SetIO and ToolDataT2Msg (`#49 <https://github.com/ros-industrial/ur_msgs/issues/49>`_)
+* Contributors: Felix Exner, Rune Søe-Knudsen
+
 3.0.0 (2026-07-02)
 ------------------
 * [BREAKING[ Add inertia matrix and transition_time support to set_payload service   (`#42 <https://github.com/ros-industrial/ur_msgs/issues/42>`_)
