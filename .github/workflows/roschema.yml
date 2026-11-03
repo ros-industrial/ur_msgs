@@ -1,0 +1,19 @@
+name: Stability check
+on: pull_request
+jobs:
+  roschema:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: |
+          python -m pip install roschema
+      - name: Run roschema
+        run: |
+          roschema check --against ${{github.event.pull_request.base.sha}}
