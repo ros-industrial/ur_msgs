@@ -2,8 +2,8 @@
 Changelog for package ur_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+3.1.0 (2026-11-03)
+------------------
 * Add message for tool data T1 (`#50 <https://github.com/ros-industrial/ur_msgs/issues/50>`_)
 * Update readme w.r.t distros and maintenance (`#52 <https://github.com/ros-industrial/ur_msgs/issues/52>`_)
   - List all target distributions and their matching dev branches
